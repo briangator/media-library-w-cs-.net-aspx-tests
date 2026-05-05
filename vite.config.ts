@@ -6,7 +6,6 @@ import {defineConfig, loadEnv} from 'vite';
 export default defineConfig(({mode}) => {
   const env = loadEnv(mode, '.', '');
   return {
-    base: '/Media-Library-w-CS-.NET-ASPX-Tests/',
     plugins: [
       react({
         include: /\.(cs|jsx|tsx)$/,
