@@ -53,7 +53,7 @@ The project includes a massive cross-platform testing suite (15 tests each):
 
 ## Documentation
 - **Written by Brian McCarthy**
-- AI Studio Build Environment
+- Brian McCarthy Development Environment
 - SDK: .NET 8.0 / React 18 / Lucide React
 - Visuals: Unsplash Integration
 
