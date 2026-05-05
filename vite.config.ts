@@ -12,18 +12,11 @@ export default defineConfig(({mode}) => {
         include: /\.(cs|jsx|tsx)$/,
       }), 
       tailwindcss(),
-      {
-        name: 'cs-as-tsx',
-        config() {
-          return {
-            esbuild: {
-              loader: 'tsx',
-              include: /src\/.*\.cs$/,
-            }
-          }
-        }
-      }
     ],
+    esbuild: {
+      loader: 'tsx',
+      include: /\.(cs|jsx|tsx)$/,
+    },
     define: {
       'process.env.GEMINI_API_KEY': JSON.stringify(env.GEMINI_API_KEY),
     },
