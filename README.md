@@ -1,8 +1,6 @@
 # Media Library Management System Pro
 Written by Brian McCarthy
 
-![Application Preview](https://via.placeholder.com/1200x600.png?text=MediaLibrary+Pro+v2.0+Dashboard+Static+Preview)
-
 ## Project Overview
 A professional-grade **C# / .NET** Media Management System demonstrating mastery of core Object-Oriented Programming (OOP) principles. The system manages a curated catalog of 45 technical and entertainment assets, integrating real-time analytics, polymorphic e-commerce logic, and a multi-framework testing suite.
 
