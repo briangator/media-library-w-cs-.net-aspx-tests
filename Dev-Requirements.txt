@@ -1,0 +1,47 @@
+PROJECT REQUIREMENTS & ARCHITECTURE - MEDIA LIBRARY PRO v2.0
+Written by Brian McCarthy
+
+CORE TECHNOLOGIES:
+1.  Language: C# 12 / .NET 8.0 (Domain models, Manager classes, and Business logic).
+2.  Frontend UI: React 18 / Vite (Interactive Dashboard and Terminal Simulation).
+3.  Dev Server: Node.js with Vite integration (Serving both TSX and CS representations).
+4.  Testing Ecosystem: 
+    - Selenium (C#): Full 15-test UI automation suite.
+    - Playwright (C#): Full 15-test modern E2E suite.
+    - Cypress (JavaScript): Frontend developer journey validation.
+    - Cucumber (C# / SpecFlow): BDD Behavioral Specification.
+5.  Styling: Tailwind CSS 4.0 (Utility-first responsive design).
+6.  Animation: Framer Motion / Motion/React (Smooth UI transitions).
+7.  Documentation: Copilot AI-Assisted XML Documentation.
+
+COMPLETE FILE MANIFEST (CORE C# SYSTEM):
+- /MediaLibrarySystem.sln: VS Solution managing the ecosystem.
+- /MediaLibrarySystem.csproj: Modern .NET 8 project configuration.
+- /Program.cs: Application Entry Point for the C# console-mode logic.
+- /MediaItem.cs: Abstract base class with validation and encapsulation.
+- /DerivedClasses.cs: Polymorphic implementations of Book, DVD, and MusicAlbum.
+- /MediaLibrary.cs: Encapsulated collection manager for domain models.
+- /Interfaces.cs: Core contracts (IDisplayable, ISearchable).
+- /ViteConfig.cs: C# representation of the build pipeline configuration.
+- /appsettings.json & App.config: Modern settings and legacy XML configuration support.
+
+WEB & FRONTEND LAYER:
+- /src/App.tsx: React-based Interactive Visualizer.
+- /src/App.cs: C# controller logic for the Frontend Dashboard.
+- /src/models/*.cs: C# Model migration (Replaced all TypeScript model files).
+- /src/main.tsx: Client-side hydration entry point.
+
+TESTING ARTIFACTS:
+- /Selenium-Tests/: C# Selenium automation framework.
+- /Playwright-Tests/: C# Playwright cross-browser framework.
+- /Cypress-Tests/: JS E2E testing suite.
+- /Cucumber-Tests/: Gherkin Features & C# Step Definitions.
+- /Stress-Tests/ & /Performance-Tests/: Specialized stability reports.
+- /Unit-Tests/: Vitest/NUnit logic verification.
+
+OBJECTIVE ACHIEVEMENT SUMMARY:
+- Inheritance: Validated "is-a" hierarchy between MediaItem and specialized types.
+- Polymorphism: Run-time method resolution for valuation bonuses and dynamic metadata display.
+- Encapsulation: Strict private state protection with public validation gateways.
+- Abstraction: Interface-driven design ensuring consistent interaction contracts for disparate media sources.
+

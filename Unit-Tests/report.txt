@@ -1,0 +1,12 @@
+TEST REPORT: UNIT TESTS
+Written by Brian McCarthy
+
+TESTS EXECUTED (8/8 Passed):
+1. UT-01: MediaItem ID auto-increment logic - PASSED
+2. UT-02: Book valuation calculation formula - PASSED
+3. UT-03: DVD valuation calculation formula - PASSED
+4. UT-04: Album valuation calculation formula - PASSED
+5. UT-05: Search term accumulation (Base + Derived) - PASSED
+6. UT-06: Year boundary validation (1800 - Current) - PASSED
+7. UT-07: Title empty/whitespace validation - PASSED
+8. UT-08: MediaLibrary collection management (add/find) - PASSED

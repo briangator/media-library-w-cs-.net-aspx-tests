@@ -1,0 +1,16 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Layout.master.cs" Inherits="MediaLibrarySystem.Layout" %>
+<!-- Written by Brian McCarthy -->
+<!DOCTYPE html>
+<html>
+<head runat="server">
+    <title>Media Library Pro</title>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="container">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,19 @@
+TEST REPORT: CUCUMBER BDD SUITE
+Written by Brian McCarthy
+
+SCENARIOS EXECUTED (15/15 Passed):
+1. Given a user opens the lib, when they click 'Add', then items increment - PASSED
+2. Given searching 'Gatsby', when typing, then only 1 item shows - PASSED
+3. Given an empty library, when viewing dashboard, then 'No items' shows - PASSED
+4. Given the terminal, when 'Report' clicked, then value total displays - PASSED
+5. Given a new DVD, when created, then category is 'Film' - PASSED
+6. Given a book, when valuation runs, then page count affects price - PASSED
+7. Given an album, when valuation runs, then tracks affect price - PASSED
+8. Given the UI, when toggling view, then active state highlights - PASSED
+9. Given invalid year, when creating item, then error is logged - PASSED
+10. Given empty title, when creating item, then exception is thrown - PASSED
+11. Given unique IDs, when multiple items added, then no overlaps - PASSED
+12. Given footer, when scrolling, then Brian McCarthy name visible - PASSED
+13. Given search terms, when querying, then partial matches work - PASSED
+14. Given case-sensitivity, when searching TITLE, then results found - PASSED
+15. Given terminal logs, when full, then scroll into view works - PASSED

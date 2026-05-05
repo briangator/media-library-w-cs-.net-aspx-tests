@@ -1,0 +1,20 @@
+@page
+@model MediaLibrarySystem.Pages.IndexModel
+@{
+    ViewData["Title"] = "Media Library Dashboard";
+}
+<!-- Written by Brian McCarthy -->
+<div class="text-center">
+    <h1 class="display-4">Welcome to Media Library Pro</h1>
+    <p>Modern Razor Pages implementation of the library system.</p>
+</div>
+
+<div class="card-grid">
+    @foreach (var item in Model.LibraryItems)
+    {
+        <div class="card">
+            <h5>@item.Title</h5>
+            <p>@item.GetBasicInfo()</p>
+        </div>
+    }
+</div>

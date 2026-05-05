@@ -1,0 +1,12 @@
+TEST REPORT: INTEGRATION TESTS
+Written by Brian McCarthy
+
+TESTS EXECUTED (8/8 Passed):
+1. IT-01: MediaLibrary aggregation of derived Book class - PASSED
+2. IT-02: MediaLibrary aggregation of derived DVD class - PASSED
+3. IT-03: MediaLibrary aggregation of derived Album class - PASSED
+4. IT-04: Search interface correctly filtering Library items - PASSED
+5. IT-05: Valuation logic integrating with Report output - PASSED
+6. IT-06: React state binding to MediaLibrary instances - PASSED
+7. IT-07: Error propagation from Model to UI Log - PASSED
+8. IT-08: Polymorphic collection persistence in memory - PASSED
