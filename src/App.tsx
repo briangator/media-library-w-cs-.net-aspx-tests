@@ -6,6 +6,7 @@
 import React, { useState, useEffect, useRef, useMemo } from 'react';
 import { Terminal, Book as BookIcon, Disc, Music, Search, PlusCircle, FileText, Settings, Database, Shield, Zap, Activity, Users, ShoppingCart, Play, ExternalLink, Star } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
+import { Logger } from './lib/logging';
 
 // --- TS REPRESENTATIONS FOR FRONTEND SIMULATION (CORE LOGIC IS IN .CS FILES) ---
 abstract class MediaItem {
@@ -85,6 +86,7 @@ class MediaLibrary {
 }
 
 export default function App() {
+  Logger.info('App: Rendering component...');
   const [library] = useState(new MediaLibrary());
   const [logs, setLogs] = useState<string[]>([]);
   const [view, setView] = useState<'terminal' | 'dashboard' | 'about' | 'contact' | 'checkout'>('dashboard');
@@ -93,6 +95,7 @@ export default function App() {
   const terminalEndRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
+    Logger.info('App: useEffect initialization starting...');
     try {
       // --- 15 TECH BOOKS ---
       const books = [
@@ -153,6 +156,7 @@ export default function App() {
       
       [...books, ...dvds, ...albums].forEach(item => library.addItem(item));
 
+      Logger.info('App: initialization complete with', library.items.length, 'items');
       log("Media Library Pro v2.0 Initialized.");
       log("Written by Brian McCarthy");
       log(`Total items in core memory: ${library.items.length}`);

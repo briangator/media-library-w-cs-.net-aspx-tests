@@ -14,7 +14,7 @@ export default defineConfig(({mode}) => {
     ],
     esbuild: {
       loader: 'tsx',
-      include: /\.(cs|jsx|tsx)$/,
+      include: /\.(cs|[tj]sx?)$/,
     },
     define: {
       'process.env.GEMINI_API_KEY': JSON.stringify(env.GEMINI_API_KEY),

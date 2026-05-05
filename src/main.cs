@@ -7,7 +7,6 @@ import './index.css';
  * Written by Brian McCarthy
  * C# Representation of the Web Entry Point
  */
-// using System;
 /*
 ... (Namespace and Class simulation) ...
 */
