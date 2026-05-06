@@ -38,6 +38,23 @@ test('Application loads and renders dashboard', async ({ page }) => {
   await expect(initializer).not.toBeVisible();
 });
 
+test('Checkout process navigation', async ({ page }) => {
+  await page.goto('/');
+  
+  // Add an item to cart
+  const addToCartBtn = page.locator('button:has-text("Add to Cart")').first();
+  await addToCartBtn.click();
+  
+  // Click Checkout Now in the bottom bar
+  const checkoutBtn = page.locator('button:has-text("Checkout Now")');
+  await expect(checkoutBtn).toBeVisible({ timeout: 5000 });
+  await checkoutBtn.click();
+  
+  // Verify we are on the Final Review page
+  const reviewHeading = page.locator('h2:has-text("Final Review")');
+  await expect(reviewHeading).toBeVisible({ timeout: 5000 });
+});
+
 test('Logging critical errors to console', async ({ page }) => {
   const errors: string[] = [];
   page.on('console', msg => {

@@ -387,7 +387,7 @@ export default function App() {
                  <div className="text-xs opacity-80">Total Value: ${cartTotal.toFixed(2)}</div>
                </div>
             </div>
-            <button onClick={() => { log("PURCHASE COMPLETE: Thank you!"); setCart([]); }} className="bg-white text-blue-600 px-6 py-2 rounded-xl font-bold hover:bg-blue-50 transition-colors">Checkout Now</button>
+            <button onClick={() => setView('checkout')} className="bg-white text-blue-600 px-6 py-2 rounded-xl font-bold hover:bg-blue-50 transition-colors">Checkout Now</button>
           </div>
         </motion.div>
       )}

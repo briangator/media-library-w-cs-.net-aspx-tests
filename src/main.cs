@@ -1,18 +1,34 @@
-import {StrictMode} from 'react';
-import {createRoot} from 'react-dom/client';
-import App from './App.cs';
+import { StrictMode } from 'react';
+import { createRoot } from 'react-dom/client';
+import App from './App';
 import './index.css';
+import { Logger } from './lib/logging';
 
 /**
- * Written by Brian McCarthy
- * C# Representation of the Web Entry Point
+ * [ C# ENTRY POINT SIMULATION ]
+ * namespace MediaLibrarySystem.Client
+ * {
+ *     public class Program {
+ *         public static void Main(string[] args) { ... }
+ *     }
+ * }
  */
-/*
-... (Namespace and Class simulation) ...
-*/
 
-createRoot(document.getElementById('root')!).render(
-  <StrictMode>
-    <App />
-  </StrictMode>,
-);
+Logger.info('PROGRAM_START: Initializing React runtime...');
+
+try {
+  const container = document.getElementById('root');
+  if (!container) {
+    throw new Error('System.NullReferenceException: Root container not found in DOM.');
+  }
+  
+  createRoot(container).render(
+    <StrictMode>
+      <App />
+    </StrictMode>
+  );
+  
+  Logger.info('PROGRAM_INIT_SUCCESS: Hydration complete.');
+} catch (error) {
+  Logger.error('SYSTEM_CRITICAL: Hydration failed.', error);
+}
